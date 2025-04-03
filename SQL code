@@ -1,0 +1,21 @@
+CREATE DATABASE StudentDB;
+
+USE StudentDB;
+
+CREATE TABLE Employee (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    department VARCHAR(100)
+);
+
+INSERT INTO Employee (name, department) VALUES
+('Deepak', 'IT'),
+('Jatin', 'HR'),
+('Robin', 'Finance');
+
+CREATE TABLE Attendance (
+    studentId INT PRIMARY KEY,
+    name VARCHAR(100),
+    date DATE,
+    status VARCHAR(20)
+);
